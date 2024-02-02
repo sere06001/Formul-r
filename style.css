@@ -1,0 +1,16 @@
+.wrapper{
+    width: 100%;
+    height: 96vh;
+    border: 1px solid red;
+}
+
+.wrapper div{
+    width: fit-content;
+    aspect-ratio: 2 / 1;
+    border: 1px solid blue;
+    text-align: right;
+}
+
+p{
+    margin: 0;
+}
