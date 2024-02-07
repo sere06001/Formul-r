@@ -9,11 +9,32 @@
     <body>
         <div class="wrapper">
             <div>
-                <p>
-                    Användarnamn: <input type="text" title="Skriv ditt användarnamn"> <br>
-                    Lösenord: <input type="password" title="Skriv ditt lösenord" id="password"> <br>
-                    <input type="checkbox" id="toggle">Visa lösenord 
-                </p>
+                <fieldset>
+                    <legend>
+                        Logga in
+                    </legend>
+                    <label>Användarnamn: </label>
+                    <input type="text" title="Skriv ditt användarnamn">
+                    <strong title="Obligatorisk uppgift">*</strong><br>
+                    <label>Lösenord: </label>
+                    <input type="password" title="Skriv ditt lösenord" id="password">
+                    <strong title="Obligatorisk uppgift">*</strong><br>
+                    <input type="checkbox" id="toggle">
+                    <label>Visa lösenord</label> 
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Vem är du?
+                    </legend>
+                    <label>Namn: </label>
+                    <input type="text" title="Skriv ditt namn">
+                    <strong title="Obligatorisk uppgift">*</strong><br>
+                    <label>Födelsedatum: </label>
+                    <input type="date" title="Måste vara minst 13år" max="2011-02-07">
+                    <strong title="Obligatorisk uppgift">*</strong><br>
+                    </p>
+                </fieldset>
                 <a href="tackFörSvar.html">
                     <button>Skicka</button>
                 </a>

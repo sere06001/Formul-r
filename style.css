@@ -4,7 +4,7 @@
     border: 1px solid red;
 }
 
-.wrapper > div{
+.wrapper div{
     position: relative;
     width: fit-content;
     left: 50%;
@@ -15,10 +15,24 @@
     text-align: right;
 }
 
+
+fieldset{
+    border-radius: 12px;
+}
+
 button:hover{
     cursor: pointer;
 }
 
 p{
     margin: 0;
+}
+
+input[type="date"]{
+    width: 58%;
+}
+
+legend{
+    text-align: left;
+    width: fit-content;
 }
