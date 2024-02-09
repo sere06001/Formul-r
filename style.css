@@ -18,10 +18,33 @@
 
 fieldset{
     border-radius: 12px;
+    height: 100%;
+}
+
+button{
+    position: relative;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 16px;
+    background-color: rgb(70, 158, 240);
 }
 
 button:hover{
     cursor: pointer;
+    background-color: rgba(70, 158, 240, 0.75);
+}
+
+input[type="radio"]{
+    position: relative;
+    right: 90%;
+}
+
+label[for="svar"]{
+    position: relative;
+    right: 90%;
 }
 
 p{
@@ -32,7 +55,22 @@ input[type="date"]{
     width: 58%;
 }
 
+input, label{
+    margin-bottom: 3%;
+}
+
 legend{
     text-align: left;
     width: fit-content;
+}
+
+#visa, #toggle{
+    position: relative;
+    right: 4%;
+}
+
+@media not (min-height: 770px) { /*Gör så att det blir 2 kolumner*/
+    body{
+        background-color: aqua;
+    }
 }

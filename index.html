@@ -11,7 +11,7 @@
             <div>
                 <fieldset>
                     <legend>
-                        Logga in
+                        Skapa konto
                     </legend>
                     <label>Användarnamn: </label>
                     <input type="text" title="Skriv ditt användarnamn">
@@ -20,7 +20,7 @@
                     <input type="password" title="Skriv ditt lösenord" id="password">
                     <strong title="Obligatorisk uppgift">*</strong><br>
                     <input type="checkbox" id="toggle">
-                    <label>Visa lösenord</label> 
+                    <label id="visa">Visa lösenord</label> 
                     </p>
                 </fieldset>
                 <fieldset>
@@ -33,11 +33,28 @@
                     <label>Födelsedatum: </label>
                     <input type="date" title="Måste vara minst 13år" max="2011-02-07">
                     <strong title="Obligatorisk uppgift">*</strong><br>
+                    <label>Kön: </label>
+                    <select title="Välj kön">
+                        <option value="välj">Välj alternativ</option>
+                        <option value="man">Man</option>
+                        <option value="kvinna">Kvinna</option>
+                        <option value="annat">Annat</option>
+                    </select>
+                    <strong title="Obligatorisk uppgift">*</strong><br>
                     </p>
                 </fieldset>
-                <a href="tackFörSvar.html">
-                    <button>Skicka</button>
-                </a>
+                <fieldset>
+                    <legend>Vad tyckte du om formuläret?</legend>
+                    <input type="radio"><label for="svar">D</label><br>
+                    <input type="radio"><label for="svar">D</label><br>
+                    <input type="radio"><label for="svar">D</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Skicka</legend>
+                    <a href="tackFörSvar.html">
+                        <button>Skicka</button>
+                    </a>
+                </fieldset>
             </div>
         </div>
         <script src="lösenord.js"></script>
