@@ -12,9 +12,21 @@
     transform: translate(-50%, -50%);
     aspect-ratio: 2 / 1;
     border: 1px solid blue;
+}
+
+.wrapper div fieldset:not(:nth-child(3)){
     text-align: right;
 }
 
+.wrapper div fieldset:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+
+.wrapper div fieldset:nth-child(3) input, .wrapper div fieldset:nth-child(3) label{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
 fieldset{
     border-radius: 12px;
@@ -37,14 +49,8 @@ button:hover{
     background-color: rgba(70, 158, 240, 0.75);
 }
 
-input[type="radio"]{
-    position: relative;
-    right: 90%;
-}
-
-label[for="svar"]{
-    position: relative;
-    right: 90%;
+input[type="radio"], label[for="svar"]{
+	text-align: left;
 }
 
 p{
@@ -69,8 +75,15 @@ legend{
     right: 4%;
 }
 
-@media not (min-height: 770px) { /*Gör så att det blir 2 kolumner*/
-    body{
-        background-color: aqua;
-    }
+h1{
+    margin: 0;
+    font-size: clamp(3rem, 2.5vw, 5rem); 
+}
+
+#tillbaks{
+    width: fit-content;
+}
+
+#tillbaks p{
+    width: fit-content;
 }
